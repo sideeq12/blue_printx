@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blue Print</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Great+Vibes&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>     
+            body {
+                overflow: hidden;
+                margin: 0px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            .link{
+               display: flex;
+               position: fixed;
+               top: 30px;
+               margin-left: 45vw;
+               background-color: #1C1D21;
+               border-radius: 5px;
+               border: 1px solid white;
+               padding: 5px;
+
+            }
+            .link a{
+                color : black;
+                padding: 5px 10px;
+                text-decoration: none;
+                background-color: white;
+                color: #1C1D21;
+                border-radius: 5px;
+            }
+            .link a.active{
+                color : white;
+                background-color: #1C1D21;
+            }
+            /* .webgl{
+            
+            } */
+            .first_span{
+                position: fixed;
+                color : white;
+                background-color: #1C1D21;
+                padding : 10px 15px;
+                top: 50vh;
+                margin-left: 10vw;
+                border-radius: 3px;
+            }
+            .admin{
+                z-index: 2;
+                position: fixed;
+                top: 25vh;
+                margin-left: 10vw;
+                color: white;
+            }
+             .admin .address .details{
+                 display: flex;
+                 flex-direction: column;
+             }
+             .down-right{
+                 position: fixed;
+                 bottom: 10vh;
+                 right: 30px;
+                 color: white;
+                 z-index: 1;
+                 display: flex;
+                 flex-direction: column;
+                 gap : 1rem;
+                 justify-content: center;
+             }
+             .downleft{
+                position: fixed;
+                 bottom: 10vh;
+                 left: 10vw;
+                 color: white;
+                 z-index: 1;
+                 display: flex;
+                 flex-direction: column;
+                 gap : 1rem;
+                 justify-content: center;
+             }
+             .admin h1{
+                 font-size: 40px;
+                 word-spacing: 1px;
+             }
+        </style>
+
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script
+            async
+            src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+        ></script>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="link"><a href="#" class="active">VR MODE</a> <a href="second.html">Static</a></div>
+        <script type="module" src="client.js"></script>
+       <div class="admin">
+        <h1>The Brandon Shaw Gallery</h1>
+        <div class="address">
+            <img src="" alt="" /> <div class="details">
+                <label for="">@0x230b23..</label>
+                <label class="dep">Deployer</label>
+            </div>
+        </div>
+       </div>
+        <div class="first_span">
+            Launch Virtual World
+        </div>
+
+        <div class="down-right"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
+            <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+          </svg>
+          <b>Use your mouse to rotate</b>
+        </div>
+        <div class="downleft">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-eject" viewBox="0 0 16 16">
+                <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H1.656C.78 9.5.326 8.455.926 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5h12.692zM.5 11.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-1zm14 0h-13v1h13v-1z"/>
+              </svg>
+            Use your keyboard to move
+        </div>
+        
+        <canvas class="webgl"></canvas>
+    </body>
+</html>
