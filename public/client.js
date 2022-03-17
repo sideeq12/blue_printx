@@ -81,7 +81,7 @@ addEventListener("keyup", (e)=>{
 })
 
 function processKeyboard(){
-    let actualspeed = 0.05
+    let actualspeed = 0.3
     if(keyboard["w"] || keyboard["ArrowUp"]){
         controls.moveForward(actualspeed)
     }
