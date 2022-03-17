@@ -18,7 +18,7 @@ const scene = new THREE.Scene()
 
 const gltfLoader = new GLTFLoader();
   gltfLoader.load(
-      "/models/room/scene.gltf",
+      "/models/shop/brandon.glb",
       (gltf)=>{
           const root = gltf.scene
           root.scale.set(0.5, 0.5, 0.5)
